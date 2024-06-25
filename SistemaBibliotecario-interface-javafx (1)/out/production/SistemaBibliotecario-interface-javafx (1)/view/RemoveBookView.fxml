@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RemoveBookViewController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="700.0" prefWidth="300.0" style="-fx-background-color: #1b435c;">
+         <children>
+            <Label text="SiSB" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="52.0" />
+               </font>
+            </Label>
+            <Label text="Sistema Bibliotecário" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#handleReturnToTheMenu" prefHeight="0.0" prefWidth="153.0" text="Voltar para o Menu Inicial">
+               <VBox.margin>
+                  <Insets top="200.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="500.0" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: #9FBDC3;" AnchorPane.leftAnchor="300.0">
+         <children>
+            <Label contentDisplay="CENTER" text="Remover Livro">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="45.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Título do Livro a Remover:">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tituloRemoverField" promptText="Digite o título a remover">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#handleRemoveBook" text="Remover">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="50.0" right="50.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
